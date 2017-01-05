@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<!--
+	hacked from http://slides.html5rocks.com/
+	by ps
+	for CIAV Codebits 2014 presentation
+-->
+<html manifest="cache.appcache">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>CIAV</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+    <!--<link id="prettify-link" href="src/prettify/prettify.css" rel="stylesheet" disabled />
+    <link href="css/moon.css" class="theme" rel="stylesheet" />
+    <link href="css/sand.css" class="theme" rel="stylesheet" />
+    <link href="css/sea_wave.css" class="theme" rel="stylesheet" />-->
+    <link href="css/default.css" class="theme" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <div class="presentation">
+      <div id="presentation-counter">Loading forever?...</div>
+      <div class="slides">
+
+        <div class="slide" id="landing-slide">
+          <style>
+            #landing-slide p {
+              font-size: 35px;
+            }
+            p#disclaimer-message {
+              font-size: 20px;
+            }
+          </style>
+          <section class="middle">
+            <p>Centro Interpretação Almada Velha<br>(Interpretation Center of Old Almada)</p>
+            <h3><a href="http://tpolm.org/~ps">Filipe Cruz</a></h3>
+          </section>
+          <aside class="note">
+            <section>
+              Welcome! (This field is for presenter notes and commentary.)
+            </section>
+          </aside> 
+        </div>
+
+       <div class="slide" id="introduction">
+          <header><h1>WHOIS...</h1></header>
+          <style>
+            #introduction li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+
+          <section>
+            <ul>
+            <li>MSc Informatics Engineer (FEUP - Porto)</li>
+            <li>2007 - 2008 - Porto Digital, Porto</li>
+            <li>2008 - 2011 - Take The Wind, Coimbra</li>
+            <li>2011 - 2013 - Freelance, Helsinki</li>
+            <li>2013 - 2014 - Artica, Caparica</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide" id="table-of-contents">
+          <header><h1>TOC</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+
+          <section>
+            <ul id="toc-list">
+            	<li>Specification</li>
+            	<li>Map Table</li>
+            	<li>Control Tablets</li>
+            	<li>Computer Vision</li>
+            	<li>Network</li>
+            	<li>Proximity Sensors</li>
+            	<li>Stage Projection</li>
+            	<li>Other</li>
+            </ul>
+          </section>
+        </div>
+
+
+
+
+        <div class="slide">
+          <header><h1>Specification</h1></header>
+        </div>
+
+        <div class="slide">
+          <header><h1>Specification</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/2013-07-15-ciav-tech-report-2.jpg"/><br>
+            Ermida do Espírito Santo /<br>
+            Salão das Carochinhas
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Specification</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/2013-07-15-ciav-tech-report-1.jpg"/><br>
+            Centro de Interpretação de Almada Velha<br>
+            <a href="data/flyer.pdf">flyer</a>
+            </p>
+          </section>
+        </div>
+
+
+
+
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/IMG_0329.JPG" width="70%"><br>
+            Iron and Wood Structure
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/IMG_0337.JPG" width="70%"><br>
+            Covered in sand based concrete
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/IMG_0802_SIZEDOWN.JPG" width="70%"><br>
+            Hanging Projectors Structure
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+          <section>
+            <ul id="toc-list">
+            	<li>display text, images and video</li>
+            	<li>communication</li>
+            	<li>background glowing effect</li>
+            </ul>
+          </section>
+        </div>
+        
+       <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+          <section>
+            <ul id="toc-list">
+            	<li>(html5 + css3)</li>
+            	<li>(websockets)</li>
+            	<li>(webgl canvas)</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/panasonic-pt-dw640elk.jpg" width="70%"><br>
+            2x Panasonic DW 640L
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/IMG_0853.JPG" width="70%"><br>
+            problems with same resolution
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            problems with hardware edge blending<br><br>
+            (hardware didn't overlap 2 sources<br>without loss of data on middle)
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            software edge blending<br><br>
+            (awesomium to render browser to image)<br>
+            (libcinder to implement image overlap)
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/ciav.jpg" width="70%"><br>
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Map Table</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/DSW_2771.JPG" width="70%"><br>
+            led strip below<br>
+            (Arduino)
+            </p>
+          </section>
+        </div>
+
+
+
+
+		<div class="slide">
+          <header><h1>Control Tablets</h1></header>
+        </div>
+        
+         <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/bq-Edison-tablet.jpg" width="70%"><br>
+            4x bq Edison (Android)<br><br>
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+           problems with phantom touches
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+           (energy supplies)
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+            interface fast prototype<br>
+            (phonegap)
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+            problem on windows<br>detecting target android device<br>
+            (had to find vendor id on a mac<br>and edit config file manually)
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+            problem with websockets on android<br>
+            (had to test 3 different plugins)
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Control Tablets</h1></header>
+          <section>
+            <p class="center">
+            problem with videos on android<br>
+            (video plugins only work on some models)<br>
+            (problem with fullscreen, autoplay, localfiles)
+            </p>
+          </section>
+        </div>
+
+
+
+		<div class="slide">
+          <header><h1>Computer Vision</h1></header>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/cctv_illuminator.jpg"><br>
+            cctv illuminator
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/df116ef594124593458ae7b01b8b4a10d65ad7.jpg"><br>
+            used film
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/psEye-backScrews.jpg" width="70%"><br>
+            psEye
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/duct-tape-3m.256104841_std.jpg"><br>
+            m4d h4xX0r sk1llz
+            </p>
+          </section>
+        </div>
+        
+    	<div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            problems with drivers<br><br>
+            (not recognizing, sometimes freezing)
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/opentsps.jpg" width="70%"><br>
+            OpenTSPS (send data through websockets)
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            problems connecting websockets<br><br>
+            (default channel was "", should be "/")
+            </p>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Computer Vision</h1></header>
+          <section>
+            <p class="center">
+            problems with light changes<br><br>
+            (calibrate, progressive recapture)
+            </p>
+          </section>
+        </div>
+     
+     
+     
+     
+        <div class="slide">
+          <header><h1>Network</h1></header>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Network</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/artica_ciav2.png"><br>
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Network</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/b50f3969-50dc-4781-bb4b-9231aebbda29-2-400-0.jpg"><br>
+            2x TP-Link WR941ND
+            </p>
+          </section>
+        </div>    
+
+        <div class="slide">
+          <header><h1>Network</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+          <section>
+          	Problems:
+            <ul id="toc-list">
+            	<li>wireless bridge</li>
+            	<li>too many connections after a few hours</li>
+            </ul>
+          </section>
+        </div>    
+
+       <div class="slide">
+          <header><h1>Network</h1></header>
+          <style>
+            #toc-list > li {
+              font-size: 26px;
+              line-height: 33px;
+              opacity: 0.85;
+            }
+          </style>
+          <section>
+            <ul id="toc-list">
+            	<li>(<a href="http://www.dd-wrt.com/site/index">dd-wrt</a>)</li>
+            	<li>(schedule night reboot)</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <header><h1>Network</h1></header>
+          <section>
+            <p class="center">
+            	Node.js server connecting with:<br><br>
+            	OpenTSPS (via websockets)<br>
+            	4 Android Tablets (via websockets)<br>
+            	Map Application (via websockets)<br>
+            	4 Arduinos ledstrips (via TCP)<br>
+            </p>
+          </section>
+        </div>
+    
+        
+        
+ 		<div class="slide">
+          <header><h1>Proximity Sensors</h1></header>
+        </div>
+
+        <div class="slide">
+          <header><h1>Proximity Sensors</h1></header>
+          <section>
+            <p class="center">
+           <img src="data/arduino-sharp-infrared-sensor.jpg" />
+            </p>
+          </section>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Proximity Sensors</h1></header>
+          <section>
+            <p class="center">
+           <img src="data/DSW_2700_SIZEDOWN.JPG" width="70%"/>
+            </p>
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1>Proximity Sensors</h1></header>
+          <section>
+            <p class="center">
+            <img src="data/DSW_2709.JPG" width="70%"/><br>
+            Display cabinets<br>
+            (led spotlights)
+            </p>
+          </section>
+        </div> 
+        
+        <div class="slide">
+          <header><h1>Proximity Sensors</h1></header>
+          <section>
+            <p class="center">
+            Interactive Video Player<br><br>
+            (vlc server +<br>python script +<br>arduino with proximity sensors)
+            </p>
+          </section>
+        </div>
+ 
+       
+        
+         
+ 		<div class="slide">
+          <header><h1>Stage Projection</h1></header>
+        </div>
+
+        <div class="slide">
+          <header><h1>Stage Projection</h1></header>
+          <section>
+            <p class="center">
+            Video playing on 3 walls<br><br>
+            (Einstein Video Server +<br>Matrox splitter)
+            </p>
+          </section>
+        </div>
+ 
+        <div class="slide">
+          <header><h1>Stage Projection</h1></header>
+          <section>
+            <p class="center">
+            problem finding BIOS auto power on<br><br>
+            (computer not easily accessible for manual boot)
+            </p>
+          </section>
+        </div>
+        
+         <div class="slide">
+          <header><h1>Stage Projection</h1></header>
+          <section>
+            <p class="center">
+            problem video freezing sometimes<br><br>
+            (out of memory?!<br>schedule reboot every night)
+            </p>
+          </section>
+        </div>
+
+
+
+
+		<div class="slide">
+          <header><h1>Other</h1></header>
+        </div>
+        
+        <div class="slide">
+          <header><h1>Other</h1></header>
+          <section>
+            <p class="center">
+            problems with maintenance<br><br>
+            (disable auto-updates<br><br>
+            install remote access<br><br>
+            process re-launch monitoring<br><br>
+            schedule periodic reboots<br><br>
+            everything auto-launch)<br><br>
+            </p>
+          </section>
+        </div>
+        
+         <div class="slide">
+          <header><h1>Other</h1></header>
+          <section>
+            <p class="center">
+            problems with power loss<br><br>
+            computer booting to bios<br><br>
+            (buy an UPS)<br>
+            </p>
+          </section>
+        </div>
+
+		<div class="slide">
+          <header><h1>Other</h1></header>
+          <section>
+            <p class="center">
+            <a href="http://www.youtube.com/watch?v=urG9LNcyugM">making of video</a>
+            <br><br>
+            <a href="http://artica.cc/blog/2013/07/15/ciav-tech-report.html">tech report</a>
+            <br><br>
+            <a href="https://bitbucket.org/artica/ciav/">source code</a>
+            </p>
+          </section>
+        </div>
+
+
+
+        
+        <div class="slide">
+          <header><h1>Thanks!</h1></header>
+          <section>
+            <p class="center">
+            Questions?
+            </p>
+          </section>
+        </div>
+
+                
+      </div> <!-- slides -->
+      <style>
+      #speaker-note {
+        position:absolute;
+        left: 0;
+        top: 80%;
+        width: 100%;
+        height: 20%;
+        z-index: 50;
+        opacity: 0.75;
+        background-color: white;
+        overflow: auto;
+        padding: 2px 20px;
+        -webkit-transition: top 0.5s ease-in-out;
+        -moz-transition: top 0.5s ease-in-out;
+        -o-transition: top 0.5s ease-in-out;
+        transition: top 0.5s ease-in-out;
+      }
+      #speaker-note.invisible {
+        top: 101%;
+      }
+      </style>
+      <div id="speaker-note" class="invisible" style="display: none;">
+      </div> <!-- speaker note -->
+    </div> <!-- presentation -->
+
+    <script src="js/utils.js?20110617"></script>
+    
+  </body>
+
+</html>
